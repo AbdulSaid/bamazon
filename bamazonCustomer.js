@@ -73,36 +73,41 @@ function askUser() {
           showProducts();
         } else {
           var productInfo = res[0];
-          console.log('I wonder what' + res[0]);
           if (quantity <= productInfo.stock_quantity) {
             console.log(
               productInfo.product_name + ' Is in stock! Placing Order'
             );
             console.log('\n');
 
-            var updateDb =
-              'UPDATE products SET stock_quantity = ' +
-              (productInfo.stock_quantity - quantity);
+            var quantNew = productInfo.stock_quantity - quantity;
+            connection.query(
+              'UPDATE products SET ? WHERE ?',
+              [
+                {
+                  stock_quantity: quantNew
+                },
+                { item_id: item }
+              ],
+              function(err, data) {
+                if (err) throw err;
 
-            connection.query(updateDb, function(err, data) {
-              if (err) throw err;
+                console.log('Your order has been placed');
+                console.log('Your total is $' + productInfo.price * quantity);
+                console.log('Thank you for shopping with us');
+                console.log(
+                  "To shop again, please input 'node bmazonCustomer.js' into the command line"
+                );
 
-              console.log('Your order has been placed');
-              console.log('Your total is $' + productInfo.price * quantity);
-              console.log('Thank you for shopping with us');
-              console.log(
-                "To shop again, please input 'node bmazonCustomer.js' into the command line"
-              );
-
-              connection.end();
-            });
+                connection.end();
+              }
+            );
           } else {
             console.log(
               'Sorry, there is not enough ' +
                 productInfo.product_name +
                 ' in stock'
             );
-            console.log('Insufficient quantity!');
+            console.log('Insufficient quantity! Please Search Again!');
 
             setTimeout(function() {
               showProducts();
