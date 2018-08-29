@@ -25,6 +25,7 @@
 5. Then create a Node application called `bamazonCustomer.js`. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
 
 ![1] (https://github.com/AbdulSaid/bamazon/blob/master/images/Screen%20Shot%202018-08-29%20at%206.14.18%20PM.png)
+![stack Overflow](http://lmsotfy.com/so.png)
 
 - - -
 
