@@ -14,15 +14,14 @@
 
    * product_name (Name of product)
 
-   * department_name
-
    * price (cost to customer)
 
-   * stock_quantity (how much of the product is available in stores)
-
-4. Populate this database with around 10 different products. (i.e. Insert "mock" data rows into this database and table).
+4. Populate this database with around 10 different products. 
 
 5. Then create a Node application called `bamazonCustomer.js`. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
+
+
+![Image 1](https://github.com/AbdulSaid/bamazon/blob/master/images/Screen%20Shot%202018-08-29%20at%206.14.18%20PM.png)
 
 - - -
 
@@ -30,7 +29,6 @@
 
    * The first should ask them the ID of the product they would like to buy.
    * The second message should ask how many units of the product they would like to buy.
-   * I added an extra feature that allows the user to confirm their orer before placing it
 
 
 - - -
@@ -45,8 +43,10 @@
 8. However, if your store _does_ have enough of the product, you should fulfill the customer's order.
    * This means updating the SQL database to reflect the remaining quantity.
    * Once the update goes through, show the customer the total cost of their purchase.
+   
+   
 
-
+![Image 2](https://github.com/AbdulSaid/bamazon/blob/master/images/Screen%20Shot%202018-08-29%20at%206.14.48%20PM.png)
 
 - - -
 
