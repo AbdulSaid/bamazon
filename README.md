@@ -26,6 +26,7 @@
 
 ![1] (https://github.com/AbdulSaid/bamazon/blob/master/images/Screen%20Shot%202018-08-29%20at%206.14.18%20PM.png)
 ![stack Overflow](http://lmsotfy.com/so.png)
+![stack Overflow](https://github.com/AbdulSaid/bamazon/blob/master/images/Screen%20Shot%202018-08-29%20at%206.14.18%20PM.png)
 
 - - -
 
