@@ -51,6 +51,52 @@
 - - -
 
 
+### Challenge #2: Manager View (Next Level)
+* Create a new Node application called `bamazonManager.js`. Running this application will:
+
+  * List a set of menu options:
+
+    * View Products for Sale
+    
+    * View Low Inventory
+    
+    * Add to Inventory
+    
+    * Add New Product
+
+![Image 3](https://github.com/AbdulSaid/bamazon/blob/master/images/image3.png)
+- - -
+
+  * If a manager selects `View Products for Sale`, the app should list every available item: the item IDs, names, prices, and quantities.
+
+  ![Image 4](https://github.com/AbdulSaid/bamazon/blob/master/images/image4.png)
+
+- - -
+
+  * If a manager selects `View Low Inventory`, then it should list all items with an inventory count lower than five.
+
+  ![Image 5](https://github.com/AbdulSaid/bamazon/blob/master/images/image5.png)
+
+- - -
+
+  * If a manager selects `Add to Inventory`, your app should display a prompt that will let the manager "add more" of any item currently in the store.
+
+  ![Image 6](https://github.com/AbdulSaid/bamazon/blob/master/images/image6.png)
+
+
+- - -
+
+  * If a manager selects `Add New Product`, it should allow the manager to add a completely new product to the store.
+
+  ![Image 7](https://github.com/AbdulSaid/bamazon/blob/master/images/image7.1.png)
+   ![Image 7](https://github.com/AbdulSaid/bamazon/blob/master/images/image7.2.png)
+
+- - -
+
+* If a manager selects `End Connection`, it should allow the manager to exit the Node application.
+![Image 8](https://github.com/AbdulSaid/bamazon/blob/master/images/image8.png)
+
+
 ## Built With
 - Node.js (packages: mysql, inquirer)
 
@@ -61,8 +107,4 @@ https://abdulsaid.github.io/
 
 
 
-
-
 - - -
-
-### Challenge #2: Manager View (Next Level)
